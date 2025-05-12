@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.App {
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+}
+
+/* Smooth transitions */
+.MuiPaper-root,
+.MuiButton-root,
+.MuiChip-root {
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* Hover effects */
+.MuiPaper-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.MuiButton-contained:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.MuiChip-root:hover {
+  transform: scale(1.05);
+}
+
+/* Loading animation */
+.MuiLinearProgress-root {
+  height: 6px !important;
+  border-radius: 3px !important;
+}
